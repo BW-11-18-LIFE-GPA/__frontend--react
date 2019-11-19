@@ -1,13 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import "../App.css"
 
 import { register } from "../actions";
+import registerImg from "../images/registerImg.png";
+import NavBar from "./NavBar";
 
 class Register extends Component {
   state = {
     newCredentials: {
       username: "",
-      password: ""
+      password: "",
+      email: ""
     }
   };
 
@@ -32,10 +36,15 @@ class Register extends Component {
       return <p>REGISTERING...</p>;
     }
     return (
-      <div className="mainDiv">
+      <div className="mainDivTwo">
+        <NavBar/>
+        <div className="sideDiv">
+          <img src={registerImg} alt="login"/>
+        </div>
         <div className="registerDiv">
           <form onSubmit={this.register} className="registerForm">
             <h2>Register Your Account!</h2>
+            <h4>Username</h4>
             <input
               type="text"
               name="username"
@@ -43,6 +52,15 @@ class Register extends Component {
               onChange={this.changeHandler}
               placeholder="username"
             />
+            <h4>Email Address</h4>
+            <input
+                type="email"
+                name="email"
+                value={this.state.newCredentials.email}
+                onChange={this.changeHandler}
+                placeholder="email"
+            />
+            <h4>Password</h4>
             <input
               type="password"
               name="password"

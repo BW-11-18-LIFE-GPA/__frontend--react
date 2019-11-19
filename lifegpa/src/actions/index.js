@@ -40,3 +40,22 @@ export const login = creds => dispatch => {
       dispatch({ type: LOGIN_FAILURE, payload: err });
     });
 };
+
+export const HABIT_START = "HABIT_START";
+export const HABIT_SUCCESS = "HABIT_SUCCESS";
+export const HABIT_FAILURE = "HABIT_FAILURE";
+
+export const habits = creds => dispatch => {
+    dispatch({ type: HABIT_START });
+    return axios
+        .post("https://life-gpa-lambda.herokuapp.com/api/habits", creds)
+        .then(res => {
+            localStorage.setItem("token", res.data.token);
+            console.log(res);
+            dispatch({ type: HABIT_SUCCESS, payload: res.data });
+        })
+        .catch(err => {
+            console.log(err);
+            dispatch({ type: HABIT_FAILURE, payload: err });
+        });
+};
