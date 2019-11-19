@@ -48,9 +48,10 @@ export const HABIT_FAILURE = "HABIT_FAILURE";
 export const habits = creds => dispatch => {
     dispatch({ type: HABIT_START });
     return axios
-        .post("https://life-gpa-lambda.herokuapp.com/api/habits", creds)
+        .post("https://life-gpa-lambda.herokuapp.com/api/habits", creds, {
+            headers: { Authorization: localStorage.getItem("token") }
+        })
         .then(res => {
-            localStorage.setItem("token", res.data.token);
             console.log(res);
             dispatch({ type: HABIT_SUCCESS, payload: res.data });
         })

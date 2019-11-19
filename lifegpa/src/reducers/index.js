@@ -1,16 +1,18 @@
 import {
-    REGISTER_START,
-    REGISTER_SUCCESS,
-    LOGIN_START,
-    LOGIN_SUCCESS}
-    from "../actions"
+  REGISTER_START,
+  REGISTER_SUCCESS,
+  LOGIN_START,
+  LOGIN_SUCCESS, HABIT_SUCCESS
+}
+  from "../actions"
 
 const initialState = {
   loggingIn: false,
   isLoggedIn: false,
   token: "",
   user: {},
-  LoggedInUser: {}
+  LoggedInUser: {},
+  habits: [{name:"", description:""}]
 };
 
 const reducer = (state = initialState, action) => {
@@ -38,6 +40,13 @@ const reducer = (state = initialState, action) => {
         loggingIn: false,
         isLoggedIn: true,
         LoggedInUser: action.payload
+      };
+    case HABIT_SUCCESS:
+      return {
+        ...state,
+        loggingIn: false,
+        isLoggedIn: true,
+        habits: action.payload
       };
     default: 
     return state  
