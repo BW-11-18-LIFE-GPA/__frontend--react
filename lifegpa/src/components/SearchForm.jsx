@@ -7,6 +7,9 @@ height:40px;
 width:250px;
 font-size:20px;
 border-radius: 10px;
+margin: 2% 14%;
+display: flex;
+justify-content: center;
 `
 export default function SearchForm(props) {
  

@@ -48,7 +48,7 @@ export default function NavTab() {
         <NavBarDiv>
             <NavA href="https://lifegpa-lambda.netlify.com/index.html">Home</NavA>
             <NavA href="https://lifegpa-lambda.netlify.com/about.html">About</NavA>
-            <NavA><StyledLink to="/users">Users</StyledLink></NavA>
+            <NavA><StyledLink to="/users">Find Friends</StyledLink></NavA>
             <NavA><StyledLink to="/dashboard">Dashboard</StyledLink></NavA>
             <NavA><LogButton><StyledLink to="/register">Register</StyledLink></LogButton>
             <LogButton><StyledLink to="/login">Login</StyledLink></LogButton></NavA>
