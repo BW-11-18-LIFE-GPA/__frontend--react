@@ -1,57 +1,71 @@
 import React, { Component } from "react";
 import { Card, Container, Grid, Paper } from "@material-ui/core";
 
-import User from "./User"
-import Habits from './Habits'
+import User from "./User";
+import Habits from "./Habits";
 import randomGuyPic from "../assets/img/randomguy.jpg";
 
-const axios = require('axios')
+const axios = require("axios");
 
 class Dashboard extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            user:{
-                name: "Some Random Guy",
-                username: "randomdude",
-                userPic: randomGuyPic,
-            },
-            habit:[]
-        };
-    }
-    async componentDidMount(){
-        const res = await axios.get('https://life-gpa-lambda.herokuapp.com/api/users') 
-        const userEx = res.data.find(user => user.id === 2);
-        this.setState((prevState) => ({
-            user:{
-                ...prevState.user,
-                username:userEx.username,
-                id:userEx.id
-            }
+  constructor(props) {
+    super(props);
+    this.state = {
+      user: {
+        userPic: randomGuyPic
+      },
+      habit: [],
+      userAttr:{
+          gender:'',
+          age:'',
+          nationality:'',
+          goal:''
+      }
+    };
+  }
+
+  async componentDidMount() {
+    const res = await axios.get(
+      "https://life-gpa-lambda.herokuapp.com/api/users"
+    );
+    const userEx = res.data.find(user => user.id === 2);
+    this.setState(prevState => ({
+      user: {
+        ...prevState.user,
+        name: userEx.username,
+        id: userEx.id
+      }
+    }));
+
+    //Valid For 24 Hours
+    const key =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImptamxlcyIsImlhdCI6MTU3NDE5ODIyMywiZXhwIjoxNTc0Mjg0NjIzfQ.JxURRuiexwn120byf3urQYPPh3zaxbdyHQ-KMahc0ys";
+
+    const res2 = await axios.get(
+      `https://life-gpa-lambda.herokuapp.com/api/users/${this.state.user.id}/habits/`,
+      {
+        headers: {
+          Authorization: key
         }
-        ))
+      }
+    );
+    const habits = res2.data.habits;
 
-        const res2 = await axios.get('https://life-gpa-lambda.herokuapp.com/api/habits',{
-            params:{
-                user_id: this.state.user.id
-            }
-        }) 
-        const habits = res2.data;
-        console.log(habits);
+    this.setState(() => ({
+      habit: habits
+    }));
+  }
 
-        this.setState((prevState)=>({
-            habit:habits
-        })
-        )
-    }
   render() {
     return (
       <Grid container>
         <Grid item xs={5}>
-          <User user ={this.state.user}/>
+          <User user={this.state.user}/>
         </Grid>
         <Grid item xs={7}>
+          <Grid container>
             <Habits habits={this.state.habit}/>
+          </Grid>
         </Grid>
       </Grid>
     );

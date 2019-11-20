@@ -5,7 +5,7 @@ import Dashboard from './components/Dashboard';
 
 function App() {
   return (
-    <Container maxWidth='md'>
+    <Container maxWidth='lg'>
       <Dashboard/>
     </Container>
   );
