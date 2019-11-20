@@ -20,3 +20,30 @@
 .App-link {
   color: #09d3ac;
 }
+
+/* TOP NAVIGATION MENU */
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 5rem;
+  background: #d3a1f5;
+  padding-left: 10%;
+}
+.nav a {
+  color: #2e343b;
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 0 5%;
+  transition-duration: 300ms;
+  font-weight: 300;
+}
+.nav a:last-child {
+  padding: 0;
+  margin: 0 5%;
+}
+.nav a:hover {
+  transition-property: color;
+  color: #6b6b6b;
+}
