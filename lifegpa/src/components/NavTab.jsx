@@ -34,7 +34,7 @@ const LogButton = styled.button`
     min-width: 5rem;
     line-height: 3rem;
     border-radius: 5px;
-    color: #FFF;
+    color: #FFFF;
     transition-duration: 300ms;
     &:hover {
         transition-property: background, color;
