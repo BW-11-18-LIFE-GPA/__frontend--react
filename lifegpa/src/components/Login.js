@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import axios from "axios";
 
 import { login } from "../actions";
 import "../App.css";
+import "./Login.css";
 import NavBar from "./NavBar";
 import handshake from "../images/handshake.png";
 
@@ -26,7 +26,9 @@ class Login extends Component {
 
   login = e => {
     e.preventDefault();
-    this.props.login(this.state.credentials).then(() => {
+    this.props.login(this.state.credentials)
+        .then(() => {
+          console.log(this.state);
       this.props.history.push("/protected");
     });
   };
@@ -48,6 +50,7 @@ class Login extends Component {
         <div className="loginDiv">
           <form onSubmit={this.login} className="loginForm">
             <h2>Welcome to Life GPA!</h2>
+            <h4>Username</h4>
             <input className="inputStyle"
               type="text"
               name="username"
@@ -55,6 +58,7 @@ class Login extends Component {
               onChange={this.changeHandler}
               placeholder="username"
             />
+            <h4>Password</h4>
             <input className="inputStyle"
               type="password"
               name="password"
@@ -69,6 +73,15 @@ class Login extends Component {
         </div>
       </div>
     </div>
+    <div className="extraLogin">
+      <h1>What's next after logging in?</h1>
+      <ul>
+        <h4>Create your first habit!</h4>
+        <h4>Asign a score to your habit.</h4>
+        <h4>Watch your life improve as you visually watch your score go up (or down) based on your daily routine!</h4>
+      </ul>
+    </div>
+
   </div>
     );
   }

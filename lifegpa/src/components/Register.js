@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import "../App.css"
+// import "../App.css"
+import "./Register.css";
 
 import { register } from "../actions";
 import registerImg from "../images/registerImg.png";

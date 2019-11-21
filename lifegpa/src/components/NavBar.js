@@ -1,21 +1,16 @@
 import React from 'react';
 import "../App.css";
+import "./NavBar.css"
 import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
-import ListItemText from '@material-ui/core/ListItemText';
-import InboxIcon from '@material-ui/icons/MoveToInbox';
-import MailIcon from '@material-ui/icons/Mail';
-import {Link} from "react-router-dom";
+import {Link, NavLink, Route} from "react-router-dom";
 
-import buttonD from "../images/buttonD.png";
-import buttonUp from "../images/buttonUp.png";
 import buttonL from "../images/buttonL.png";
-import buttonR from "../images/buttonR.png";
+import Login from "./Login";
+import Logout from "./Logout";
 
 const useStyles = makeStyles({
     list: {
@@ -51,18 +46,25 @@ export default function NavBar() {
             onKeyDown={toggleDrawer(side, false)}
         >
             <List>
-                <Link className="menuLink" to="/">Home</Link>
+                <a className="menuLink" href="https://lifegpa-lambda.netlify.com/">Home</a>
                 <br/>
                 <Link className="menuLink" to="/login">Login</Link>
                 <br/>
                 <Link className="menuLink" to="/register">Register</Link>
                 <br/>
-                <Link className="menuLink" to="/about">The Team</Link>
+                <a className="menuLink" href="https://lifegpa-lambda.netlify.com/about.html">The Team</a>
                 <br/><br/>
             </List>
             <Divider />
             <List>
                 <h3>Please login to see these options.</h3>
+                <div>
+                { localStorage.getItem('token') ?
+
+                    <Link to='/logout'>Log Out</Link>
+
+                    : null }
+                </div>
             </List>
         </div>
     );
@@ -74,23 +76,23 @@ export default function NavBar() {
             onClick={toggleDrawer(side, false)}
             onKeyDown={toggleDrawer(side, false)}
         >
-            <List>
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
-            <Divider />
-            <List>
-                {['All mail', 'Trash', 'Spam'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
+            {/*<List>*/}
+            {/*    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (*/}
+            {/*        <ListItem button key={text}>*/}
+            {/*            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>*/}
+            {/*            <ListItemText primary={text} />*/}
+            {/*        </ListItem>*/}
+            {/*    ))}*/}
+            {/*</List>*/}
+            {/*<Divider />*/}
+            {/*<List>*/}
+            {/*    {['All mail', 'Trash', 'Spam'].map((text, index) => (*/}
+            {/*        <ListItem button key={text}>*/}
+            {/*            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>*/}
+            {/*            <ListItemText primary={text} />*/}
+            {/*        </ListItem>*/}
+            {/*    ))}*/}
+            {/*</List>*/}
         </div>
     );
 

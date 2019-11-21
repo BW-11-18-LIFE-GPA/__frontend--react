@@ -1,0 +1,30 @@
+
+.mainDivTwo {
+    border: 2px black solid !important;
+    margin: 4% auto;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 4%;
+    width: 50vw;
+}
+
+.registerButton{
+    color: blue !important;
+}
+.registerButton:hover{
+    color: green !important;
+}
+.registerForm {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+.registerForm input{
+    margin-bottom: 8px;
+}
+.registerForm h4{
+    margin: 0;
+}

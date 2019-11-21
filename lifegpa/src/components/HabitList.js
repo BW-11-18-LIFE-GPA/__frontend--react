@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { Route, Redirect } from 'react-router-dom';
 import axios from "axios";
 import HabitCard from "./HabitCard";
 
 const HabitList = (props) => {
     const [habitList, setHabitList] = useState([]);
+    const [habit_id, setHabit_id] = useState(0);
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -14,8 +13,45 @@ const HabitList = (props) => {
                 headers: { Authorization: localStorage.getItem("token") }
             })
             .then(res => {
-                console.log(res);
+                // console.log(res);
+                // console.log(res.data);
                 setHabitList(res.data);
+                res.data.map(habits => {
+                    console.log(habits);
+                    console.log(habits.id);
+                    return setHabit_id(habits.id)
+                })
+                // using local storage for token to persist through refresh
+            })
+            .catch(err => console.log(err));
+    };
+
+    const addHabit = () => {
+        const userId = localStorage.getItem("user_id");
+        console.log(userId);
+        // e.preventDefault();
+        axios
+            .post(`https://life-gpa-lambda.herokuapp.com/api/users/${userId}/habits/`,{}, {
+                headers: {Authorization: localStorage.getItem("token")}
+            })
+            .then(res => {
+                console.log(res);
+
+                // setHabitList(res.data);
+                // using local storage for token to persist through refresh
+            })
+            .catch(err => console.log(err));
+    };
+
+    const getUser = e => {
+        e.preventDefault();
+        axios
+            .get("https://life-gpa-lambda.herokuapp.com/api/users", {
+                headers: { Authorization: localStorage.getItem("token") }
+            })
+            .then(res => {
+                console.log(res);
+                // setHabitList(res.data);
                 // using local storage for token to persist through refresh
             })
             .catch(err => console.log(err));
@@ -24,11 +60,13 @@ const HabitList = (props) => {
     return (
         <div>
             <h1>Habits</h1>
-            <button onClick={handleSubmit}>Button</button>
+            <button onClick={handleSubmit}>Habit Button</button>
+            <button onClick={getUser}>User Button</button>
+
             {habitList.map(habits => {
                 return <HabitCard key={habits.id}
                                   habit={habits}
-                                  // name={name}
+                                  addHabit={addHabit}
                                   />
             })}
         </div>

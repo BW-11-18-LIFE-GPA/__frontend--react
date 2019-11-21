@@ -1,0 +1,42 @@
+.menuLink {
+    /*border: 1px black dashed;*/
+    border-radius: 8px;
+    margin: 10%;
+    padding: 2%;
+    font-size: 20px;
+}
+
+.NavContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+}
+.menuButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100px;
+    position: absolute;
+}
+.menuButtons img {
+    width: 2vw;
+}
+.menuButtons .left {
+    position: fixed;
+    right: 50px;
+}
+.menuButtons .right {
+    position: relative;
+    bottom: 42px;
+}
+.menuButtons .top {
+    position: relative;
+    right: 24px;
+    top: 10px;
+}
+.menuButtons .bottom {
+    position: relative;
+    bottom: 53px;
+    right: 25px;
+}

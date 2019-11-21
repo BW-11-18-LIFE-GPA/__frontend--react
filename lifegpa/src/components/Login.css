@@ -1,0 +1,58 @@
+html{
+    background-color: #fdfcd5;
+}
+
+.section {
+    border: 2px black solid !important;
+    margin: 4%;
+    background-color: white;
+    box-shadow: 10px 10px 5px grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttonStyle {
+    border-radius: 10px;
+    width: 100px;
+}
+
+.loginDiv h4{
+    margin: 4% 0 0;
+}
+
+.mainDiv {
+    margin-top: 3vh;
+    /*margin-left: 3vw;*/
+    padding: 4%;
+    /*border: 1px black solid;*/
+    max-width: 50vw;
+}
+.sideDiv img{
+    position: center;
+    max-width: 40vw;
+}
+
+.mainDivTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100vw;
+}
+
+.loginForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.extraLogin{
+    border: 2px black solid !important;
+    margin: 12%;
+    background-color: #ecf0f1;
+    box-shadow: 10px 10px 5px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
