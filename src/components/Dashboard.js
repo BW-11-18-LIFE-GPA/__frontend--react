@@ -16,10 +16,10 @@ class Dashboard extends Component {
       },
       habit: [],
       userAttr:{
-          gender:'',
-          age:'',
-          nationality:'',
-          goal:''
+          gender:'unknown',
+          age:'unknown',
+          nationality:'unknown',
+          bio:'unknown'
       }
     };
   }
@@ -49,18 +49,30 @@ class Dashboard extends Component {
         }
       }
     );
-    const habits = res2.data.habits;
 
+    const habits = res2.data.habits;
     this.setState(() => ({
       habit: habits
     }));
+  }
+
+
+  handleSubmit = (props) => {
+    this.setState(({props:{gender,age,nationality,bio}})=>({
+      userAttr:{
+        gender,
+        age,
+        nationality,
+        bio
+      }
+    }))
   }
 
   render() {
     return (
       <Grid container>
         <Grid item xs={5}>
-          <User user={this.state.user}/>
+          <User user={this.state.user} userAttr={this.state.userAttr} handleSubmit={this.handleSubmit}/>
         </Grid>
         <Grid item xs={7}>
           <Grid container>
