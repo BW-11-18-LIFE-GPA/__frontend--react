@@ -15,11 +15,11 @@ class Dashboard extends Component {
         userPic: randomGuyPic
       },
       habit: [],
-      userAttr:{
-          gender:'unknown',
-          age:'unknown',
-          nationality:'unknown',
-          bio:'unknown'
+      userAttr: {
+        gender: "unknown",
+        age: "unknown",
+        nationality: "unknown",
+        bio: "unknown"
       }
     };
   }
@@ -39,7 +39,7 @@ class Dashboard extends Component {
 
     //Valid For 24 Hours
     const key =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImptamxlcyIsImlhdCI6MTU3NDE5ODIyMywiZXhwIjoxNTc0Mjg0NjIzfQ.JxURRuiexwn120byf3urQYPPh3zaxbdyHQ-KMahc0ys";
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImptamxlcyIsImlhdCI6MTU3NDM3MTgwNywiZXhwIjoxNTc0NDU4MjA3fQ.KbT9ihp0xgMtvFq2O9AaL4PBxxePXAnBG8n-9I5mL60";
 
     const res2 = await axios.get(
       `https://life-gpa-lambda.herokuapp.com/api/users/${this.state.user.id}/habits/`,
@@ -56,27 +56,34 @@ class Dashboard extends Component {
     }));
   }
 
+  handleSubmit = props => {
+    props.preventDefault();
+    console.log(props);
+  };
 
-  handleSubmit = (props) => {
-    this.setState(({props:{gender,age,nationality,bio}})=>({
-      userAttr:{
-        gender,
-        age,
-        nationality,
-        bio
+  handleChange = e => {
+    e.persist();
+    this.setState(prevState => ({
+      userAttr: {
+        ...prevState.userAttr,
+        [e.target.name]: e.target.value
       }
-    }))
-  }
-
+    }));
+  };
   render() {
     return (
       <Grid container>
-        <Grid item xs={5}>
-          <User user={this.state.user} userAttr={this.state.userAttr} handleSubmit={this.handleSubmit}/>
+        <Grid item xs={3}>
+          <User
+            user={this.state.user}
+            userAttr={this.state.userAttr}
+            handleSubmit={this.handleSubmit}
+            handleChange={this.handleChange}
+          />
         </Grid>
-        <Grid item xs={7}>
+        <Grid item xs={9}>
           <Grid container>
-            <Habits habits={this.state.habit}/>
+            <Habits habits={this.state.habit} />
           </Grid>
         </Grid>
       </Grid>
