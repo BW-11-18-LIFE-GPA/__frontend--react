@@ -2,18 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="727c824d-9418-4d07-98f5-3de94ec2ce88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Score.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/ScoreAdd.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lifegpa/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/HabitCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/HabitCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/HabitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/HabitList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Habits.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Habits.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/NavBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Habits.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Login.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Protected.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Protected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/UserHabits.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/UserHabits.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lifegpa/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifegpa/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/yarn.lock" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,8 +26,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Login.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="240">
-                  <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="44" />
+                <state relative-caret-position="192">
+                  <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                   </folding>
@@ -43,22 +38,10 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/actions/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1658">
-                  <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+                <state relative-caret-position="1106">
+                  <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
                   <folding>
                     <element signature="e#0#25#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Logout.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="434">
-                  <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -69,6 +52,9 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="120">
                   <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -76,8 +62,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Protected.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="360">
-                  <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+                <state relative-caret-position="336">
+                  <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -88,8 +74,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Register.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1032">
-                  <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+                <state relative-caret-position="1008">
+                  <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#41#0" expanded="true" />
                     <element signature="e#104#128#0" expanded="true" />
@@ -101,13 +87,16 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/NavBar.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-744">
-                  <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+                <state relative-caret-position="-768">
+                  <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/PrivateRouter.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state>
@@ -118,49 +107,15 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Score.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="480">
-                  <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#0#39#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/ScoreAdd.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="5" selection-start-line="5" selection-end-line="5" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Protected.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="17" column="18" lean-forward="true" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habits.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1224">
-                  <caret line="51" column="12" selection-start-line="51" selection-start-column="12" selection-end-line="57" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                    <element signature="e#104#130#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="264">
+                  <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
                 </state>
               </provider>
             </entry>
@@ -168,42 +123,11 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitList.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="322">
-                  <caret line="38" selection-start-line="38" selection-end-line="38" />
+                <state relative-caret-position="-161">
+                  <caret line="17" selection-start-line="17" selection-end-line="17" />
                   <folding>
                     <element signature="e#0#40#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Register.css">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="648">
-                  <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/UserHabits.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="96">
-                  <caret line="25" column="23" lean-forward="true" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                    <element signature="e#104#130#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Welcome.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="13" column="23" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
                 </state>
               </provider>
             </entry>
@@ -223,17 +147,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="722">
-                  <caret line="158" column="3" selection-start-line="66" selection-end-line="158" selection-end-column="3" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/NavBar.css">
-              <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="818">
-                  <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+                  <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -438,17 +353,23 @@
       <option name="project" value="LOCAL" />
       <updated>1574192191625</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Mess of changes.. Broke a few components last night but will get them up and working before merge.">
+      <created>1574353086266</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1574353086266</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77390000" />
+    <option name="totallyTimeSpent" value="77648000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="2576" height="1416" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.07525611" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07525611" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -460,10 +381,10 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Quokka" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.3293556" />
       <window_info anchor="bottom" id="GraphQL" order="10" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.28162292" />
-      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007962" side_tool="true" weight="0.48397437" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49960598" visible="true" weight="0.28162292" />
+      <window_info active="true" anchor="bottom" id="Event Log" order="12" sideWeight="0.500394" side_tool="true" visible="true" weight="0.28162292" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -472,12 +393,39 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial Login Page created.&#10;No CSS design, simple auth token login - working." />
     <MESSAGE value="initial navbar created - still needs links and routing&#10;&#10;a lot of css needs to be done&#10;&#10;need more info on what to put  on the page" />
     <MESSAGE value="Primary add habits form created and working. All endpoints tested and working at this point. Just have to make actions for each endpoint." />
     <MESSAGE value="changes?" />
-    <option name="LAST_COMMIT_MESSAGE" value="changes?" />
+    <MESSAGE value="Mess of changes.. Broke a few components last night but will get them up and working before merge." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mess of changes.. Broke a few components last night but will get them up and working before merge." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lifegpa/package-lock.json" />
@@ -557,8 +505,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="158" column="3" selection-start-line="66" selection-end-line="158" selection-end-column="3" />
+        <state relative-caret-position="818">
+          <caret line="162" column="1" selection-start-line="162" selection-start-column="1" selection-end-line="162" selection-end-column="1" />
         </state>
       </provider>
     </entry>
@@ -596,29 +544,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/PrivateRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#25#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Protected.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="24" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Register.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="43" column="14" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="14" />
+        <state relative-caret-position="1008">
+          <caret line="42" column="14" selection-start-line="42" selection-start-column="14" selection-end-line="42" selection-end-column="14" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#104#128#0" expanded="true" />
@@ -646,8 +575,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/NavBar.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-744">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="-768">
+          <caret line="7" column="28" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,6 +587,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -670,8 +605,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="31" column="6" lean-forward="true" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="44" />
+        <state relative-caret-position="192">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>
@@ -690,8 +625,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="-161">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="e#0#40#0" expanded="true" />
           </folding>
@@ -711,8 +646,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1658">
-          <caret line="84" column="29" lean-forward="true" selection-start-line="84" selection-start-column="29" selection-end-line="84" selection-end-column="29" />
+        <state relative-caret-position="1106">
+          <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
           <folding>
             <element signature="e#0#25#0" expanded="true" />
           </folding>
@@ -721,10 +656,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Score.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="38" column="55" selection-start-line="38" selection-start-column="55" selection-end-line="38" selection-end-column="55" />
+        <state relative-caret-position="-228">
+          <caret line="23" column="42" lean-forward="true" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/PrivateRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#25#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Protected.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>
