@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/lifegpa/.gitignore" line="18" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="727c824d-9418-4d07-98f5-3de94ec2ce88" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Habit.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Logout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/NavBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Register.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Score.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/ScoreAdd.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/UserHabits.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lifegpa/src/components/Welcome.js" afterDir="false" />
+    <list default="true" id="727c824d-9418-4d07-98f5-3de94ec2ce88" name="Default Changelist" comment="Mess of changes.. Broke a few components last night but will get them up and working before merge.&#10;&#10;Learned it was a webstorm issue with branches within branches...">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lifegpa/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lifegpa/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/actions/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/actions/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/HabitCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/HabitCard.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lifegpa/src/components/HabitList.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/HabitList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/NavBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/NavBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Protected.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Protected.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/components/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/components/Register.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lifegpa/src/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/lifegpa/src/reducers/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -59,14 +46,33 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habits.js">
+            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habit.css">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/lifegpa/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="7" selection-start-column="7" selection-end-column="7" />
-                  <folding>
-                    <element signature="e#0#41#0" expanded="true" />
-                    <element signature="e#104#130#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="456">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitCard.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="144">
+                  <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitList.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="432">
+                  <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
                 </state>
               </provider>
             </entry>
@@ -74,17 +80,21 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/actions/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="808">
+                <state relative-caret-position="-573">
                   <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/lifegpa/src/App.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+                <state relative-caret-position="48">
+                  <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                    <element signature="e#84#129#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -128,7 +138,6 @@
         <option value="$PROJECT_DIR$/lifegpa/public/manifest.json" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Nav.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/AddHabit.js" />
-        <option value="$PROJECT_DIR$/lifegpa/.gitignore" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/UserHabits.html" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Login.css" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Register.css" />
@@ -136,7 +145,6 @@
         <option value="$PROJECT_DIR$/lifegpa/src/App.css" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Register.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Login.js" />
-        <option value="$PROJECT_DIR$/lifegpa/src/components/Habits.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Logout.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/reducers/index.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/actions/index.js" />
@@ -144,11 +152,13 @@
         <option value="$PROJECT_DIR$/lifegpa/src/components/Protected.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/ScoreAdd.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/NavBar.js" />
-        <option value="$PROJECT_DIR$/lifegpa/src/App.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/Score.js" />
-        <option value="$PROJECT_DIR$/lifegpa/src/components/HabitList.js" />
         <option value="$PROJECT_DIR$/lifegpa/src/components/HabitCard.js" />
         <option value="$PROJECT_DIR$/.git/COMMIT_EDITMSG" />
+        <option value="$PROJECT_DIR$/lifegpa/src/App.js" />
+        <option value="$PROJECT_DIR$/lifegpa/src/components/HabitList.js" />
+        <option value="$PROJECT_DIR$/lifegpa/src/components/Habits.js" />
+        <option value="$PROJECT_DIR$/lifegpa/.gitignore" />
       </list>
     </option>
   </component>
@@ -310,16 +320,24 @@
       <option name="project" value="LOCAL" />
       <updated>1574354132784</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Mess of changes.. Broke a few components last night but will get them up and working before merge.&#10;&#10;Learned it was a webstorm issue with branches within branches...">
+      <created>1574354824636</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1574354824636</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="79135000" />
+    <option name="totallyTimeSpent" value="81034000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15207006" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15207006" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -333,7 +351,7 @@
       <window_info anchor="bottom" id="Quokka" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3293556" />
       <window_info anchor="bottom" id="GraphQL" order="10" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.28365386" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49920383" visible="true" weight="0.28365386" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007962" side_tool="true" visible="true" weight="0.28365386" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -375,7 +393,8 @@
     <MESSAGE value="Primary add habits form created and working. All endpoints tested and working at this point. Just have to make actions for each endpoint." />
     <MESSAGE value="changes?" />
     <MESSAGE value="Mess of changes.. Broke a few components last night but will get them up and working before merge." />
-    <option name="LAST_COMMIT_MESSAGE" value="Mess of changes.. Broke a few components last night but will get them up and working before merge." />
+    <MESSAGE value="Mess of changes.. Broke a few components last night but will get them up and working before merge.&#10;&#10;Learned it was a webstorm issue with branches within branches..." />
+    <option name="LAST_COMMIT_MESSAGE" value="Mess of changes.. Broke a few components last night but will get them up and working before merge.&#10;&#10;Learned it was a webstorm issue with branches within branches..." />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/lifegpa/package-lock.json" />
@@ -428,13 +447,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/AddHabit.js" />
-    <entry file="file://$PROJECT_DIR$/lifegpa/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/yarn.lock">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -469,9 +481,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habit.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Welcome.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -529,26 +538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitCard.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Score.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-228">
@@ -590,24 +579,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habits.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#104#130#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/reducers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1416">
@@ -615,17 +586,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#84#129#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lifegpa/src/actions/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
+        <state relative-caret-position="-573">
           <caret line="61" column="2" selection-start-line="61" selection-start-column="2" selection-end-line="61" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lifegpa/src/App.js">
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitCard.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        <state relative-caret-position="144">
+          <caret line="7" column="44" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/HabitList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="20" column="43" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="29" column="6" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habit.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/src/components/Habits.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lifegpa/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
         </state>
       </provider>
     </entry>
