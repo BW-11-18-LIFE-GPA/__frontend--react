@@ -20,7 +20,9 @@ class Dashboard extends Component {
         age: "unknown",
         nationality: "unknown",
         bio: "unknown"
-      }
+      },
+      rawGpa: "",
+      gpa: ""
     };
   }
 
@@ -51,8 +53,17 @@ class Dashboard extends Component {
     );
 
     const habits = res2.data.habits;
+    const gpa = res2.data.gpa;
     this.setState(() => ({
-      habit: habits
+      habit: habits,
+      rawGpa: gpa
+    }));
+
+    const habitTotal = this.state.habit.length * 10;
+    const totalScoreEarned = this.state.rawGpa;
+    const percent = ((totalScoreEarned / habitTotal) * 100).toFixed(0);
+    this.setState(() => ({
+      gpa: percent
     }));
   }
 
@@ -71,18 +82,21 @@ class Dashboard extends Component {
     }));
   };
   render() {
+    const { user, userAttr, gpa } = this.state;
+    const { handleChange, handleSubmit } = this;
     return (
       <Grid container>
         <Grid item xs={3}>
           <User
-            user={this.state.user}
-            userAttr={this.state.userAttr}
-            handleSubmit={this.handleSubmit}
-            handleChange={this.handleChange}
+            user={user}
+            userAttr={userAttr}
+            handleSubmit={handleSubmit}
+            handleChange={handleChange}
+            gpa={gpa}
           />
         </Grid>
         <Grid item xs={9}>
-          <Grid container>
+          <Grid container justify="space-around">
             <Habits habits={this.state.habit} />
           </Grid>
         </Grid>

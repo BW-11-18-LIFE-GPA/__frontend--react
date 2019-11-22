@@ -1,20 +1,25 @@
 import React from "react";
-import { Paper, Container, Typography as Font, Card } from "@material-ui/core";
+import { Typography as Font, Card, Grid } from "@material-ui/core";
 import UserAttr from "./UserAttr";
+import Gpa from "./Gpa";
 
-function User({ user, userAttr, handleSubmit, handleChange }) {
+function User({ user, userAttr, handleSubmit, handleChange, gpa }) {
   const { name, userPic } = user;
   return (
     <Card elevation={4} style={style.card}>
       <Font variant="h3" align="center">
         @{name}
       </Font>
+      <br />
       <img src={userPic} height="300px" width="100%" />
+      <br />
+      <br />
       <UserAttr
         userAttr={userAttr}
         handleSubmit={handleSubmit}
         handleChange={handleChange}
       />
+      <Gpa gpa={gpa} />
     </Card>
   );
 }
