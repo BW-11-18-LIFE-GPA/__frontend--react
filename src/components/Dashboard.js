@@ -30,6 +30,8 @@ class Dashboard extends Component {
     const res = await axios.get(
       "https://life-gpa-lambda.herokuapp.com/api/users"
     );
+
+    //! Change '2' to access current user
     const userEx = res.data.find(user => user.id === 2);
     this.setState(prevState => ({
       user: {
@@ -39,7 +41,7 @@ class Dashboard extends Component {
       }
     }));
 
-    //Valid For 24 Hours
+    // Valid For 24 Hours
     const key =
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImptamxlcyIsImlhdCI6MTU3NDM3MTgwNywiZXhwIjoxNTc0NDU4MjA3fQ.KbT9ihp0xgMtvFq2O9AaL4PBxxePXAnBG8n-9I5mL60";
 
@@ -51,7 +53,7 @@ class Dashboard extends Component {
         }
       }
     );
-
+      //* Setting Habits and Raw Gpa
     const habits = res2.data.habits;
     const gpa = res2.data.gpa;
     this.setState(() => ({
@@ -59,6 +61,7 @@ class Dashboard extends Component {
       rawGpa: gpa
     }));
 
+    //* Setting Calculated Gpa
     const habitTotal = this.state.habit.length * 10;
     const totalScoreEarned = this.state.rawGpa;
     const percent = ((totalScoreEarned / habitTotal) * 100).toFixed(0);
